@@ -3,13 +3,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial;
+}
+body {
+  font-family: "Poppins", sans-serif;
 }
 
 /* GLOBAL */
 .section {
-  min-height: 90vh;
-  padding: 80px 40px;
+  height: 100vh;
+  padding: 100px 60px;
+  align-items: center;
 }
 
 /* NAV */
@@ -46,6 +49,7 @@ nav a {
   align-items: center;
   text-align: center;
   color: white;
+  height: 100vh;
 }
 
 .hero-content {
@@ -135,14 +139,20 @@ nav a {
 .team-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  margin-top: 30px;
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.team-card {
+  padding-bottom: 15px;
 }
 
 .team-card img {
   width: 100%;
-  height: 150px;
+  height: 260px;
   object-fit: cover;
+  object-position: top;
 }
 
 /* CONTACT */
@@ -214,4 +224,32 @@ footer {
   .team-container {
     grid-template-columns: 1fr;
   }
+}
+.service-card,
+.team-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease;
+}
+
+.service-card:hover,
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  width: 100%;
+}
+
+.team-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
 }
