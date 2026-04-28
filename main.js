@@ -1,9 +1,21 @@
-const images = ["images/slide1.jpg", "images/slide2.jpg", "images/slide3.jpg"];
+// SCROLL STORYTELLING ANIMATION
+const sections = document.querySelectorAll(".section");
 
-let index = 0;
-const slide = document.getElementById("slide");
+if (sections.length > 0) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    },
+    {
+      threshold: 0.15,
+    },
+  );
 
-setInterval(() => {
-  index = (index + 1) % images.length;
-  slide.src = images[index];
-}, 3000);
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+}
