@@ -85,7 +85,19 @@ nav a {
   position: relative;
   z-index: 1;
 }
+.hero-content h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
 
+.hero-content p {
+  font-size: clamp(1rem, 2.2vw, 1.4rem);
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+  line-height: 1.6;
+}
 /* BUTTON */
 .btn {
   background: #e67e22;
@@ -274,6 +286,17 @@ footer {
 }
 
 /* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-text {
+    text-align: center;
+    align-items: center;
+  }
+
+  .about-text ul {
+    list-style-position: inside;
+    padding-left: 0;
+  }
+}
 @media (max-width: 900px) {
   .section {
     padding: 80px 30px;
