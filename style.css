@@ -19,3 +19,43 @@ body {
   align-items: center;
   position: relative;
 }
+/* NAVIGATION */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #e67e22;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
