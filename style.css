@@ -308,3 +308,28 @@ footer {
 footer p {
   margin: 0;
 }
+/* ANIMATIONS */
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s forwards;
+}
+
+.fade1 {
+  animation-delay: 0.5s;
+}
+
+.fade2 {
+  animation-delay: 1s;
+}
+
+.fade3 {
+  animation-delay: 1.5s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
