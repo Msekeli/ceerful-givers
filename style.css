@@ -93,3 +93,19 @@ nav a:hover {
   margin: 0 auto 20px auto;
   line-height: 1.6;
 }
+/* BUTTONS */
+.btn {
+  background: #e67e22;
+  padding: 12px 22px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #d35400;
+  transform: translateY(-2px);
+}
