@@ -22,7 +22,6 @@ The website presents the organisation’s mission, services, team, and contact d
 
 - HTML5
 - CSS3 (Flexbox and Grid)
-- JavaScript (Vanilla)
 
 ---
 
