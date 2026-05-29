@@ -1,6 +1,6 @@
 # Cheerful Givers Community Outreach
 
-A simple responsive website built using HTML, CSS, and JavaScript for the Cheerful Givers community initiative in Bloekombos, Kraaifontein.
+A simple responsive website built using HTML and CSS for the Cheerful Givers community initiative in Bloekombos, Kraaifontein.
 
 The website presents the organisation’s mission, services, team, and contact details in a clean landing page format.
 
