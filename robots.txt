@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://msekeli.github.io/ceerful-givers/sitemap.xml

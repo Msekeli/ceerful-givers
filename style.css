@@ -409,6 +409,22 @@ footer p {
   resize: vertical;
 }
 
+/* MOBILE MODAL */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 20px;
+  }
+
+  .close-btn {
+    top: 10px;
+    right: 15px;
+    font-size: 2rem;
+  }
+}
+
 /* LIGHTBOX */
 
 .lightbox {
