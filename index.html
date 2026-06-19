@@ -6,8 +6,23 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <meta
+      name="description"
+      content="Cheerful Givers Community Outreach is a non-profit organisation in Bloekombos, Kraaifontein, dedicated to youth empowerment, community outreach, education support, and feeding programmes."
+    />
+    <meta
+      name="keywords"
+      content="Cheerful Givers, Community Outreach, Bloekombos, Youth Empowerment, Non-Profit, Feeding Scheme, Education, Volunteer, South Africa"
+    />
+    <meta name="author" content="Msekeli" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cheerful Givers Community Outreach</title>
+    <title>
+      Cheerful Givers Community Outreach | Youth Empowerment in Bloekombos
+    </title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -32,7 +47,7 @@
         <p class="fade fade2">
           Restoring dignity. Igniting hope. Empowering the youth of tomorrow.
         </p>
-        <button id="openModal" class="btn fade fade3" type="button">
+        <button class="btn fade fade3 open-modal" type="button">
           Get Involved
         </button>
       </div>
@@ -85,37 +100,37 @@
 
       <div class="team-container">
         <div class="team-card">
-          <img src="images/sphoko.png" />
+          <img src="images/sphoko.png" alt="Sphoko" />
           <h3>Chairperson</h3>
           <p>Provides leadership and ensures the vision is fulfilled.</p>
         </div>
 
         <div class="team-card">
-          <img src="images/rabe.png" />
+          <img src="images/rabe.png" alt="Rabe" />
           <h3>Secretary</h3>
           <p>Coordinates communication and documentation.</p>
         </div>
 
         <div class="team-card">
-          <img src="images/mzamo.png" />
+          <img src="images/mzamo.png" alt="Mzamo" />
           <h3>Treasurer</h3>
           <p>Ensures financial accountability and transparency.</p>
         </div>
 
         <div class="team-card">
-          <img src="images/ronoti.jpeg" />
+          <img src="images/ronoti.jpeg" alt="Ronoti" />
           <h3>Outreach Leader</h3>
           <p>Leads programs that impact the community directly.</p>
         </div>
 
         <div class="team-card">
-          <img src="images/rasman.png" />
+          <img src="images/rasman.png" alt="Rasman" />
           <h3>Youth Mentor</h3>
           <p>Guides young people toward growth and purpose.</p>
         </div>
 
         <div class="team-card">
-          <img src="images/salayedwa.png" />
+          <img src="images/salayedwa.png" alt="Salayedwa" />
           <h3>Coordinator</h3>
           <p>Manages volunteers and community engagement.</p>
         </div>
@@ -126,19 +141,32 @@
     <section id="contact" class="section contact">
       <div class="contact-container">
         <div class="map">
-          <iframe
-            src="https://maps.google.com/maps?q=Bloekombos%20Kraaifontein&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          >
-          </iframe>
+          <div id="map"></div>
         </div>
 
         <div class="contact-info">
           <h2>Contact Us</h2>
+
           <p>
-            <strong>Address:</strong> 15090 Sam Njokozela Street, Bloekombos
+            <strong>Address:</strong><br />
+            15090 Sam Njokozela Street,<br />
+            Bloekombos, Kraaifontein
           </p>
-          <p><strong>Phone:</strong> 07822378797 / 07391868097</p>
-          <p><strong>Email:</strong> cheerfulgivers.youth@gmail.com</p>
+
+          <p>
+            <strong>Phone:</strong><br />
+            <a href="tel:07822378797">078 223 78797</a><br />
+            <a href="tel:07391868097">073 918 68097</a>
+          </p>
+
+          <p>
+            <strong>Email:</strong><br />
+            <a href="mailto:cheerfulgivers.youth@gmail.com">
+              cheerfulgivers.youth@gmail.com
+            </a>
+          </p>
+
+          <button class="btn open-modal" type="button">Get Involved</button>
         </div>
       </div>
     </section>
@@ -210,6 +238,8 @@
     </div>
 
     <!-- Javascript files -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
     <script src="js/search.js"></script>
     <script src="js/script.js"></script>
     <script src="js/form.js"></script>

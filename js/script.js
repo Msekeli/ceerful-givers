@@ -1,9 +1,11 @@
 const modal = document.getElementById("enquiryModal");
-const openModal = document.getElementById("openModal");
+const openButtons = document.querySelectorAll(".open-modal");
 const closeModal = document.querySelector(".close-btn");
 
-openModal.addEventListener("click", () => {
-  modal.classList.add("active");
+openButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    modal.classList.add("active");
+  });
 });
 
 closeModal.addEventListener("click", () => {
@@ -15,3 +17,17 @@ window.addEventListener("click", (event) => {
     modal.classList.remove("active");
   }
 });
+
+// LEAFLET MAP
+const map = L.map("map").setView([-33.8567, 18.6964], 14);
+
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution: "&copy; OpenStreetMap contributors",
+}).addTo(map);
+
+L.marker([-33.8567, 18.6964])
+  .addTo(map)
+  .bindPopup(
+    "<strong>Cheerful Givers Community Outreach</strong><br>Bloekombos, Kraaifontein",
+  )
+  .openPopup();
