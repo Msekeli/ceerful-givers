@@ -18,6 +18,30 @@ window.addEventListener("click", (event) => {
   }
 });
 
+// GALLERY LIGHTBOX
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightbox-image");
+const teamImages = document.querySelectorAll(".team-image");
+const lightboxClose = document.querySelector(".lightbox-close");
+
+teamImages.forEach((image) => {
+  image.addEventListener("click", () => {
+    lightboxImage.src = image.src;
+    lightboxImage.alt = image.alt;
+    lightbox.classList.add("active");
+  });
+});
+
+lightboxClose.addEventListener("click", () => {
+  lightbox.classList.remove("active");
+});
+
+lightbox.addEventListener("click", (event) => {
+  if (event.target === lightbox) {
+    lightbox.classList.remove("active");
+  }
+});
+
 // LEAFLET MAP
 const map = L.map("map").setView([-33.8567, 18.6964], 14);
 
